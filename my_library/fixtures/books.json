@@ -1,0 +1,212 @@
+[
+  {
+    "model": "core.book",
+    "pk": 1,
+    "fields": {
+      "name": "Евгений Онегин",
+      "release_year": 1831,
+      "authors": [1],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 2,
+    "fields": {
+      "name": "Капитанская Дочка",
+      "release_year": 1836,
+      "authors": [1],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 3,
+    "fields": {
+      "name": "Дубровский",
+      "release_year": 1841,
+      "authors": [1],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 4,
+    "fields": {
+      "name": "Руслан и Людмила",
+      "release_year": 1820,
+      "authors": [1],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 5,
+    "fields": {
+      "name": "Руслан и Людмила",
+      "release_year": 1990,
+      "authors": [1],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 6,
+    "fields": {
+      "name": "Герои нашего времени",
+      "release_year": 1990,
+      "authors": [2],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 7,
+    "fields": {
+      "name": "Парус",
+      "release_year": 1990,
+      "authors": [2],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 8,
+    "fields": {
+      "name": "Бородино",
+      "release_year": 1990,
+      "authors": [2],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 9,
+    "fields": {
+      "name": "Бородино",
+      "release_year": 1990,
+      "authors": [2],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 10,
+    "fields": {
+      "name": "Преступление и наказание",
+      "release_year": 1990,
+      "authors": [3],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 11,
+    "fields": {
+      "name": "Бесы",
+      "release_year": 1990,
+      "authors": [3],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 12,
+    "fields": {
+      "name": "Бесы",
+      "release_year": 1990,
+      "authors": [3],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 13,
+    "fields": {
+      "name": "Война и мир т.1",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 14,
+    "fields": {
+      "name": "Война и мир т.2",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 15,
+    "fields": {
+      "name": "Война и мир т.3",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 16,
+    "fields": {
+      "name": "Война и мир т.4",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 17,
+    "fields": {
+      "name": "Война и мир т.2",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 18,
+    "fields": {
+      "name": "Война и мир т.3",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 19,
+    "fields": {
+      "name": "Война и мир т.4",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 20,
+    "fields": {
+      "name": "Война и мир т.1",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.book",
+    "pk": 21,
+    "fields": {
+      "name": "Война и мир т.3",
+      "release_year": 1990,
+      "authors": [4],
+      "status": "В наличии"
+    }
+  }
+]

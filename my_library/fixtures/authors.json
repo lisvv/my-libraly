@@ -1,0 +1,38 @@
+[
+  {
+    "model": "core.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Александр",
+      "patronymic": "Cергеевич",
+      "last_name": "Пушкин"
+    }
+  },
+  {
+    "model": "core.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Михаил",
+      "patronymic": "Юрьевич",
+      "last_name": "Лермонтов"
+    }
+  },
+  {
+    "model": "core.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Федор",
+      "patronymic": "Михайлович",
+      "last_name": "Достоевский"
+    }
+  },
+  {
+    "model": "core.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Лев",
+      "patronymic": "Николаевич",
+      "last_name": "Толстой"
+    }
+  }
+]

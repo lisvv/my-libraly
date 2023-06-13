@@ -1,0 +1,233 @@
+[
+  {
+    "model": "core.bookhistory",
+    "pk": 1,
+    "fields": {
+      "book": 1,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 2,
+    "fields": {
+      "book": 2,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 3,
+    "fields": {
+      "book": 3,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 4,
+    "fields": {
+      "book": 4,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 5,
+    "fields": {
+      "book": 5,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 6,
+    "fields": {
+      "book": 6,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 7,
+    "fields": {
+      "book": 7,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 8,
+    "fields": {
+      "book": 8,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 9,
+    "fields": {
+      "book": 9,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 10,
+    "fields": {
+      "book": 10,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 11,
+    "fields": {
+      "book": 11,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 12,
+    "fields": {
+      "book": 12,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 13,
+    "fields": {
+      "book": 13,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 14,
+    "fields": {
+      "book": 14,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 15,
+    "fields": {
+      "book": 15,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 16,
+    "fields": {
+      "book": 16,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 17,
+    "fields": {
+      "book": 17,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 18,
+    "fields": {
+      "book": 18,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 19,
+    "fields": {
+      "book": 19,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 20,
+    "fields": {
+      "book": 20,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  },
+  {
+    "model": "core.bookhistory",
+    "pk": 21,
+    "fields": {
+      "book": 1,
+      "reader": null,
+      "start_datetime": "2023-06-01T00:00:00+0000",
+      "end_datetime": null,
+      "status": "В наличии"
+    }
+  }
+]

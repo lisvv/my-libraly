@@ -1,0 +1,29 @@
+[
+  {
+    "model": "core.reader",
+    "pk": 1,
+    "fields": {
+      "first_name": "Редпромов",
+      "patronymic": "Дмитрий",
+      "last_name": "Петрович"
+    }
+  },
+  {
+    "model": "core.reader",
+    "pk": 2,
+    "fields": {
+      "first_name": "Иванов",
+      "patronymic": "Геннадий",
+      "last_name": "Иванович"
+    }
+  },
+  {
+    "model": "core.reader",
+    "pk": 3,
+    "fields": {
+      "first_name": "Петров",
+      "patronymic": "Петр",
+      "last_name": "Сергеевич"
+    }
+  }
+]
