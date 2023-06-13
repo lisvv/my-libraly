@@ -210,20 +210,6 @@ files = [
 ]
 
 [[package]]
-name = "cron-descriptor"
-version = "1.4.0"
-description = "A Python library that converts cron expressions into human readable strings."
-category = "main"
-optional = false
-python-versions = "*"
-files = [
-    {file = "cron_descriptor-1.4.0.tar.gz", hash = "sha256:b6ff4e3a988d7ca04a4ab150248e9f166fb7a5c828a85090e75bcc25aa93b4dd"},
-]
-
-[package.extras]
-dev = ["polib"]
-
-[[package]]
 name = "django"
 version = "3.2"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
@@ -246,38 +232,40 @@ bcrypt = ["bcrypt"]
 
 [[package]]
 name = "django-celery-beat"
-version = "2.5.0"
+version = "2.2.1"
 description = "Database-backed Periodic Tasks."
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "django-celery-beat-2.5.0.tar.gz", hash = "sha256:cd0a47f5958402f51ac0c715bc942ae33d7b50b4e48cba91bc3f2712be505df1"},
-    {file = "django_celery_beat-2.5.0-py3-none-any.whl", hash = "sha256:ae460faa5ea142fba0875409095d22f6bd7bcc7377889b85e8cab5c0dfb781fe"},
+    {file = "django-celery-beat-2.2.1.tar.gz", hash = "sha256:97ae5eb309541551bdb07bf60cc57cadacf42a74287560ced2d2c06298620234"},
+    {file = "django_celery_beat-2.2.1-py2.py3-none-any.whl", hash = "sha256:ab43049634fd18dc037927d7c2c7d5f67f95283a20ebbda55f42f8606412e66c"},
 ]
 
 [package.dependencies]
-celery = ">=5.2.3,<6.0"
-cron-descriptor = ">=1.2.32"
-Django = ">=2.2,<5.0"
-django-timezone-field = ">=5.0"
+celery = ">=5.0,<6.0"
+Django = ">=2.2,<4.0"
+django-timezone-field = ">=4.1.0,<5.0"
 python-crontab = ">=2.3.4"
-tzdata = "*"
 
 [[package]]
 name = "django-timezone-field"
-version = "5.0"
-description = "A Django app providing DB, form, and REST framework fields for zoneinfo and pytz timezone objects."
+version = "4.2.3"
+description = "A Django app providing database and form fields for pytz timezone objects."
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.5"
 files = [
-    {file = "django-timezone-field-5.0.tar.gz", hash = "sha256:15746ed367a5a32eda76cfa2886eeec1de8cda79f519b7c5e12f87ed7cdbd663"},
-    {file = "django_timezone_field-5.0-py3-none-any.whl", hash = "sha256:199f211082eeac7e83563929b8ce41399c1c0f00dfc2f36bc00bea381027eaaa"},
+    {file = "django-timezone-field-4.2.3.tar.gz", hash = "sha256:5dd5bd9249382bef8847d3e7e4c32b7be182a4b538f354130d1252ed228892f8"},
+    {file = "django_timezone_field-4.2.3-py3-none-any.whl", hash = "sha256:7552d2b0f145684b7de3fb5046101c7efd600cc6ba951b15c630fa1e1b83558e"},
 ]
 
 [package.dependencies]
+django = ">=2.2"
 pytz = "*"
+
+[package.extras]
+rest-framework = ["djangorestframework (>=3.0.0)"]
 
 [[package]]
 name = "djangorestframework"
@@ -722,4 +710,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "210591512ccf14d39a0219a094b5f441cd5df218041a5ed782b114b0923e234d"
+content-hash = "57aa5d11a2ab6ce2332db4759773572bf4a2a5b160a3c43a7ebab6576d6cb8f1"

@@ -43,18 +43,3 @@ def books_refund_checker():
                 reader=book.current_history_row.reader,
                 refund_datetime=book.current_history_row.start_datetime + relativedelta(days=14)
             )
-
-
-schedule, _ = CrontabSchedule.objects.get_or_create(
-    minute='1',
-    hour='*',
-    day_of_week='*',
-    day_of_month='*',
-    month_of_year='*',
-)
-
-PeriodicTask.objects.get_or_create(
-    crontab=schedule,
-    name='Book checker',
-    task='core.tasks.book_checker',
-)

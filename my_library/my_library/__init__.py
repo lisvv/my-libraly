@@ -1,3 +1,3 @@
-from my_library.celery_app import app as celery_app
-
-__all__ = ("celery_app", )
+# from my_library.celery_app import app as celery_app
+#
+# __all__ = ("celery_app", )
