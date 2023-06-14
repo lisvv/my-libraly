@@ -25,7 +25,7 @@ def upload_book_to_db(line) -> None:
     new_book = Book.objects.create(name=book_name, release_year=int(year), status=BookStatus.AVAILABLE)
     new_book.authors.set(authors_instances)
     new_book.save()
-    BookHistory.objects.cretate(book=new_book, status=BookStatus.AVAILABLE)
+    BookHistory.objects.create(book=new_book, status=BookStatus.AVAILABLE)
 
 
 @app.task()
