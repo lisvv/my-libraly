@@ -1,12 +1,10 @@
-import datetime
 import logging
 
 from dateutil.relativedelta import relativedelta
 from django.utils import timezone
-from django_celery_beat.models import CrontabSchedule, PeriodicTask
 
 from core.const import BookStatus
-from core.models import Author, Book, Notification
+from core.models import Author, Book, Notification, BookHistory
 from my_library.celery_app import app
 
 logger = logging.getLogger("celery")
@@ -24,9 +22,10 @@ def upload_book_to_db(line) -> None:
         first_name, last_name = author.split()
         instance, created = Author.objects.get_or_create(first_name=first_name, last_name=last_name)
         authors_instances.append(instance)
-    new_book = Book.objects.create(name=book_name, release_year=int(year))
+    new_book = Book.objects.create(name=book_name, release_year=int(year), status=BookStatus.AVAILABLE)
     new_book.authors.set(authors_instances)
     new_book.save()
+    BookHistory.objects.cretate(book=new_book, status=BookStatus.AVAILABLE)
 
 
 @app.task()

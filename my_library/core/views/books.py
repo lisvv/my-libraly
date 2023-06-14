@@ -24,10 +24,11 @@ class BookViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         if self.action in (BookAction.CHANGE_STATUS, BookAction.DELETE):
             return Book.objects.all()
+
         remainders = Book.objects.filter(
             name=models.OuterRef("name"),
             authors=models.OuterRef("authors__id")
-        ).order_by().annotate(
+        ).exclude(status=BookStatus.ON_READING).order_by().annotate(
             count=models.Func(models.F('id'), function='Count')
         ).values('count')
 
