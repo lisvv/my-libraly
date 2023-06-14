@@ -3,27 +3,27 @@
     "model": "core.reader",
     "pk": 1,
     "fields": {
-      "first_name": "Редпромов",
-      "patronymic": "Дмитрий",
-      "last_name": "Петрович"
+      "first_name": "Редпромо",
+      "patronymic": "Петрович",
+      "last_name": "Дмитрий"
     }
   },
   {
     "model": "core.reader",
     "pk": 2,
     "fields": {
-      "first_name": "Иванов",
-      "patronymic": "Геннадий",
-      "last_name": "Иванович"
+      "first_name": "Геннадий",
+      "patronymic": "Иванович",
+      "last_name": "Иванов"
     }
   },
   {
     "model": "core.reader",
     "pk": 3,
     "fields": {
-      "first_name": "Петров",
-      "patronymic": "Петр",
-      "last_name": "Сергеевич"
+      "first_name": "Петр",
+      "patronymic": "Петрович",
+      "last_name": "Сергей"
     }
   }
 ]
