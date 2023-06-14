@@ -8,7 +8,7 @@ from rest_framework.decorators import action
 from rest_framework.request import Request
 from rest_framework.response import Response
 
-from core.const import BookStatus
+from core.const import BookStatus, BookAction
 from core.models import Book, BookHistory
 from core.pagination import DefaultPagination
 from core.serializers import BookSerializer
@@ -16,11 +16,14 @@ from core.serializers.books import BookEventSerializer
 from core.tasks import upload_book_to_db
 
 
+@extend_schema(tags=['Книги'])
 class BookViewSet(viewsets.ModelViewSet):
     pagination_class = DefaultPagination
     serializer_class = BookSerializer
 
     def get_queryset(self):
+        if self.action in (BookAction.CHANGE_STATUS, BookAction.DELETE):
+            return Book.objects.all()
         remainders = Book.objects.filter(
             name=models.OuterRef("name"),
             authors=models.OuterRef("authors__id")
@@ -39,7 +42,6 @@ class BookViewSet(viewsets.ModelViewSet):
                 output_field=models.DateTimeField()
             )
         ).values("refund_date")[:1]
-
         return Book.objects.all().annotate(
             remainder_count=models.Subquery(remainders),
             refund_date=models.Subquery(refund_date, output_field=models.DateTimeField())

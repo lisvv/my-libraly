@@ -5,7 +5,10 @@ services:
   backend:
     build: .
     command: sh -c "cd my_library \
-                    && python3 manage.py migrate && python3 manage.py load_fixtures && python3 manage.py collectstatic --noinput && gunicorn --bind 0.0.0.0:8000 my_library.wsgi:application"
+                    && python3 manage.py migrate \
+                    && python3 manage.py load_fixtures \
+                    && python3 manage.py collectstatic --noinput \
+                    && gunicorn --bind 0.0.0.0:8000 my_library.wsgi:application"
     restart: always
     volumes:
       - static_volume:/code/my_library/static/

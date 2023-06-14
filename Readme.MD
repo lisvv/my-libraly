@@ -2,7 +2,7 @@
 
 ## Запуск проекта
 1. Клонируем проект `git clone https://github.com/lisvv/my_library.git`
-2. `docker-compose up -d` в корне проекта
+2. выполняем команду `docker-compose up -d` в корне проекта
 
 ## Основной функционал
 
