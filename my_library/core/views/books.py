@@ -85,11 +85,11 @@ class BookViewSet(viewsets.ModelViewSet):
         input_file = request.FILES['file']
         book_counter = 0
         while True:
-            book_counter += 1
             line = input_file.readline()
-            upload_book_to_db(line)
             if not line:
                 break
+            book_counter += 1
+            upload_book_to_db(line)
         return Response({"message": f"Accept to upload {book_counter} books"})
 
     def get_serializer_class(self):
