@@ -17,7 +17,8 @@ class Command(BaseCommand):
             "authors",
             "books",
             "readers",
-            "book_history"
+            "book_history",
+            "users"
         )
         for fixture in fixtures:
             management.call_command("loaddata", f"{settings.BASE_DIR}/fixtures/{fixture}.json")

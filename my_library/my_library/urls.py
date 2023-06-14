@@ -6,7 +6,7 @@ from drf_spectacular.views import (SpectacularAPIView, SpectacularRedocView,
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("core.urls"))
+    path('api/v1/', include("core.urls"))
 ]
 
 if settings.DEBUG:
