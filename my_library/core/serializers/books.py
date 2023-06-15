@@ -38,17 +38,17 @@ class BookSerializer(serializers.ModelSerializer):
 class BookEventSerializer(serializers.ModelSerializer):
     reader = serializers.PrimaryKeyRelatedField(queryset=Reader.objects.all(), allow_null=True)
 
-    def to_representation(self, instance):
+    def to_representation(self, instance: Book) -> dict:
         data = super().to_representation(instance)
         data['reader'] = getattr(instance.current_history_row.reader, "id", None)
         return data
 
-    def validate_status(self, status):
+    def validate_status(self, status: str) -> str:
         if self.instance.status == status:
             raise serializers.ValidationError(f"Книга уже и так в статусе {status}")
         return status
 
-    def validate_reader(self, reader):
+    def validate_reader(self, reader: int) -> int:
         if self.initial_data.get("status") in (BookStatus.ON_READING, BookStatus.RESERVED) and not reader:
             raise serializers.ValidationError(
                 "При выборе статуса 'На прочтении' или 'Зарезервирована' должен быть выбран читатель"

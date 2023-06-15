@@ -29,7 +29,7 @@ def upload_book_to_db(line) -> None:
 
 
 @app.task()
-def books_refund_checker():
+def books_refund_checker() -> None:
     books_to_refund = Book.objects.prefetch_related("history", "notifications").filter(
         status=BookStatus.ON_READING,
         history__start_datetime__lte=timezone.now() - relativedelta(days=14),
